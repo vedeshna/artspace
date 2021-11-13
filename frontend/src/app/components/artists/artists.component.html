@@ -1,0 +1,20 @@
+<div>
+    <img class="center-block" src="assets/images/theartists.svg">
+</div>
+
+<div class="row">
+<!-- looping artist - in array-->
+    <div class="col" *ngFor="let artist of artists; let i = index">
+      <div class="animate__animated animate__fadeInLeft card h-100">
+        <div class="card-body">
+            <img src="assets/images/2bars.svg">
+            <!-- backend placeholders -->
+          <h5 class="card-title mt-4">{{ artist.name }}</h5>
+          <img [src]="images[i]" style="width: 255px; height: 320px;" class="card-img-top" alt="...">
+          <a [routerLink]="['/account', artist._id]">
+              <img class="mt-3" src="assets/images/morebutton.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

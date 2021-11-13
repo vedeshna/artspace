@@ -1,0 +1,58 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-5">
+  <div class="container" style="margin-left: 150px;">
+    <div>
+    <a class="navbar-brand" href="#">
+      <img style="mix-blend-mode: difference;" src="assets/images/logo.svg">
+    </a>
+  </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <!-- When the user is not logged in -->
+        <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+           <li class="nav-item px-5">
+            <a class="nav-link" style="margin-left: 900px;" routerLink="/aboutus" routerLinkActive="active">AboutUs</a>
+          </li>
+         <!-- <li class="nav-item px-5">
+            <a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a>
+          </li>-->
+          <li class="nav-item px-5">
+            <a class="nav-link"  routerLink="/signin" routerLinkActive="active">SignIn</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" routerLink="/signup" routerLinkActive="active">SignUp</a>
+          </li>
+        </ng-container>
+       
+
+        <!-- When the user is logged in -->
+        <ng-template #loggedIn>
+          <li class="nav-item px-5">
+            <a class="nav-link" style="margin-left: 700px;  width:15%;" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" routerLink="/artists" routerLinkActive="active">Artists</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" routerLink="/account" routerLinkActive="account">Account</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" style="cursor: pointer;" (click)="authService.logout()">Logout</a>
+          </li>
+        </ng-template>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid m-5">
+  <router-outlet></router-outlet>
+</div>

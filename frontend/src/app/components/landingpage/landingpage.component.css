@@ -1,0 +1,23 @@
+.image-position{
+    position: absolute;
+    left: 18%;
+    top:30%;
+    width: 65%;
+}
+
+.background{
+    background-color: black;
+}
+
+
+/* webpage background */
+/* to stretch background on whole webpage   */
+.webpage-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+}

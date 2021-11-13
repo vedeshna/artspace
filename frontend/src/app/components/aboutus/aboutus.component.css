@@ -1,0 +1,35 @@
+.webpage-bg{
+    position: absolute; top: 0; left: 0; height: 100%; width: 100%;
+    background-image: url('/assets/images/aboutusbackground.png');  
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.rectangle1{
+    position: absolute;
+    width: 825px;
+    height: 474px;
+    left: 825px;
+    top: 233px;
+
+    background: #FFFFFF;
+}
+
+.rectangle2{
+    position: absolute;
+    width: 914px;
+    height: 474px;
+    left: 542px;
+    top: 233px;
+
+background: url('/assets/images/aboutusimage.png') right 50%; ;
+}
+
+.center-block {
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+ }

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: myFont;
+    src: url("/assets/fonts/Cosi_Times_Roman.ttf");
+  }
+
+.navbar-light .navbar-nav .nav-link{
+    font-family: myFont;
+    color: white;
+    mix-blend-mode: difference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+}
+

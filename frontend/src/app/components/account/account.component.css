@@ -1,0 +1,28 @@
+@font-face {
+    font-family: myFont;
+    src: url('/assets/fonts/Cosi_Times_Roman.ttf');
+}
+
+.card-title{
+    font-family: myFont;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 10%;
+ }
+
+ .card-body{
+    width: 340px;
+ }
+
+ .card-text{
+    position: absolute;
+    width: 501px;
+    height: 114px;
+    left: 686px;
+    top: 70%;
+ }
