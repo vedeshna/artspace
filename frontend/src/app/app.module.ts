@@ -26,8 +26,7 @@ import { AccountComponent } from './components/account/account.component';
     GalleryComponent,
     AboutusComponent,
     LandingpageComponent,
-    AccountComponent,
-   
+    AccountComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,3 @@
-<!-- <p>account works!</p> -->
 <div class="container-fluid">
 <div>
     <img class="center-block" src="assets/images/theartists.svg">
@@ -6,6 +5,7 @@
 
 <img src="assets/images/longbars.svg">
 
+<div *ngIf="isViewing">
 <div class="row">
 <div class="card-body col-4">
     <h5 class="card-title mt-4">{{artistAccount.name}}<br>
@@ -19,7 +19,47 @@
 <div class="card-text col-8">
 Vedeshna inhales possibility and exhale creativity. Her art originated from her infinite creativity that connect her to her true self. She is aware that life is short, and that art is eternal.  She focuses on personal growth, self awareness, life experiences, filled with peace, love, joy and passion. 
 
-Take a look at our modern day goddess’s artworks,  which are beautiul, powerul and divine.
+Take a look at our modern day goddess’s artworks,  which are beautiful, powerful and divine.
+
+<div class="row">
+<div class="col-6 row-cols-2 card-title mt-5 art-button" (click)="selectArtwork()">
+    <strong>Artwork 1</strong>
+</div>
+<div class="col-6 row-cols-2 card-title mt-5 art-button" (click)="selectArtwork()">
+    <strong>Artwork 2</strong>
 </div>
 </div>
+
+</div>
+</div>
+</div>
+
+<div *ngIf="isSelected">
+    <div class="row">
+    <div class="card-body col-4">
+        <h5 class="card-title mt-4">{{artistAccount.name}}<br>
+        <br>
+        <br>
+        {{artistAccount.description}}
+        </h5>
+        <img src = {{artistAccount.image}} >
+    </div>
+    
+    <div class="card-text col-8">
+    Vedeshna inhales possibility and exhale creativity. Her art originated from her infinite creativity that connect her to her true self. She is aware that life is short, and that art is eternal.  She focuses on personal growth, self awareness, life experiences, filled with peace, love, joy and passion. 
+    
+    Take a look at our modern day goddess’s artworks,  which are beautiul, powerul and divine.
+    
+    <div class="row">
+    <div class="col-6 row-cols-2 card-title mt-5 art-button" (click)="selectArtwork()">
+        <strong>BUY</strong>
+    </div>
+    <div class="col-6 row-cols-2 card-title mt-5 art-button" (click)="selectArtwork()">
+        <strong>SAVE TO COLLECTION</strong>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+ </div>
 </div>

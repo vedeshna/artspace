@@ -26,3 +26,7 @@
     left: 686px;
     top: 70%;
  }
+
+ .art-button{
+     cursor:pointer;
+ }

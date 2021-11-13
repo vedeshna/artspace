@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TaskService } from 'src/app/services/task.service';
-import {Artist} from '../../models/artist'
 
 @Component({
   selector: 'app-account',
@@ -12,6 +11,9 @@ export class AccountComponent implements OnInit {
 
   id:string;
   artistAccount:string;
+  isSelected = false;
+  isViewing = true;
+
 
   constructor(
     private taskService: TaskService,
@@ -31,6 +33,13 @@ export class AccountComponent implements OnInit {
         },
         err => console.log(err)
       )
+  }
+
+  selectArtwork(){
+    this.isSelected = true;
+    this.isViewing = false;
+    
+    
   }
 
 }
